@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Nav from "./Nav";
 
 const ProjectList = () => {
 	const [projects, set_projects] = useState([]);
@@ -56,6 +57,7 @@ const ProjectList = () => {
 
 	return (
 		<div>
+			<Nav />
 			<h2>List of Projects ({projects.length})</h2>
 			<div>
 				<form>
